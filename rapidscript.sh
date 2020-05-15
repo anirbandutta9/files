@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo "Please wait … This might take several minutes to complete …"
 
 swapoff -a
 
