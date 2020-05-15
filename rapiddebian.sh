@@ -12,18 +12,21 @@ swapon /swapfile
 
 apt-get update -y
 
-apt install apt-transport-https ca-certificates dirmngr gnupg software-properties-common
+apt install apt-transport-https ca-certificates dirmngr gnupg software-properties-common -y
 
 wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | sudo apt-key add -
 
 add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
-apt-get install openjdk-8-jdk postgresql postgresql-contrib unzip -y
 
-apt install adoptopenjdk-8-hotspot
+apt-get update -y 
+
+apt install adoptopenjdk-8-hotspot -y
 
 echo 'JAVA_HOME="/usr/lib/jvm/adoptopenjdk-8-hotspot-amd64"'  >> /etc/environment
 
 source /etc/environment
+
+apt-get install postgresql postgresql-contrib unzip -y
 
 wget https://releases.rapidminer.com/latest/rapidminer-server/rapidminer-server-installer.zip
 
