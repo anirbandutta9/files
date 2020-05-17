@@ -6,7 +6,7 @@ systemctl enable nginx
 
 systemctl enable mariadb
 
-apt-get install php php-mysql libapache2-mod-php php-cli php-cgi php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip php-curl php-imagick -y
+apt-get install php php-mysql libapache2-mod-php php-cli php-cgi php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip php-curl php-imagick php-fpm -y
 
 mkdir -p /var/www/html/wordpress
 
@@ -30,7 +30,6 @@ chown -R www-data:www-data /var/www/html/wordpress
 
 chmod -R 755 /var/www/html/wordpress
 
-wget https://files.anirbandutta.in/wp-config.php
 
 
 
