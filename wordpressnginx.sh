@@ -51,18 +51,14 @@ sed -ri 's/.*(listen = ).*/\1127.0.0.1:9000/g' /etc/php/7.3/fpm/pool.d/www.conf
 
 sed -ri 's/.*(listen = ).*/\1127.0.0.1:9000/g' /etc/php/7.1/fpm/pool.d/www.conf
 
-systemctl restart php7.4-fpm 
-systemctl restart php7.3-fpm 
-systemctl restart php7.2-fpm
-systemctl restart php7.1-fpm
 
 systemctl restart nginx 
 
-echo " ################################################################ "
+
 
 echo  "Installation Completed Successfully . Please point" $name "to server Public IP address in your Domain DNS"
 
-echo " ################################################################ "
+
 
 echo "You will see database details are listed above. Use them to complete the installation by visiting -> http://"$name  
 
