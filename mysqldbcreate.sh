@@ -131,16 +131,13 @@ function _printPoweredBy()
 {
     cat <<"EOF"
 
-Powered By:
-   __  ___              ___               __
-  /  |/  /__ ____ ____ / _ \___ __ ______/ /  ___
- / /|_/ / _ `/ _ `/ -_) ___(_-</ // / __/ _ \/ _ \
-/_/  /_/\_,_/\_, /\__/_/  /___/\_, /\__/_//_/\___/
-            /___/             /___/
+One Click Wordpress Install Powered By:
+ANIRBAN DUTTA
+>> https://anirbandutta.in
 
- >> Store: http://www.magepsycho.com
- >> Blog: http://www.blog.magepsycho.com
-
+Mysql database creator Powered By:
+MagePsycho
+>> magepsycho.com
 ################################################################
 EOF
 }
