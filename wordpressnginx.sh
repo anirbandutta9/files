@@ -37,8 +37,11 @@ chmod -R 755 /var/www/html/wordpress
 
 sed -i -e s/example.com/"$name"/g /etc/nginx/sites-available/wordpressnginx.conf
 
+wget https://files.anirbandutta.in/mysqldbcreate.sh
 
+chmod +x mysqldbcreate.sh
 
+./mysqldbcreate.sh --host=localhost --database=wordpress --user=wordpressuser
 
 
 
