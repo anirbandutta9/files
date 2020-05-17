@@ -43,6 +43,17 @@ chmod +x mysqldbcreate.sh
 
 ./mysqldbcreate.sh --host=localhost --database=wordpress --user=wordpressuser
 
+sed -ri 's/.*(listen = ).*/\1127.0.0.1:9000/g' /etc/php/7.4/fpm/pool.d/www.conf
+
+sed -ri 's/.*(listen = ).*/\1127.0.0.1:9000/g' /etc/php/7.2/fpm/pool.d/www.conf
+
+sed -ri 's/.*(listen = ).*/\1127.0.0.1:9000/g' /etc/php/7.3/fpm/pool.d/www.conf
+
+sed -ri 's/.*(listen = ).*/\1127.0.0.1:9000/g' /etc/php/7.1/fpm/pool.d/www.conf
+
+echo  "Installation Completed. Please point" $name "to server Public IP address in your Domain DNS"
+
+ 
 
 
 
