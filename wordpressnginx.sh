@@ -1,3 +1,8 @@
+#!/bin/bash
+
+echo "Enter domain name : "
+read name
+
 apt-get update -y
 
 apt-get install nginx mariadb-server -y 
@@ -6,7 +11,7 @@ systemctl enable nginx
 
 systemctl enable mariadb
 
-apt-get install php php-mysql libapache2-mod-php php-cli php-cgi php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip php-curl php-imagick php-fpm -y
+apt-get install php php-mysql php-cli php-cgi php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip php-curl php-imagick php-fpm -y
 
 mkdir -p /var/www/html/wordpress
 
@@ -30,7 +35,7 @@ chown -R www-data:www-data /var/www/html/wordpress
 
 chmod -R 755 /var/www/html/wordpress
 
-
+sed -i -e s/example.com/"$name"/g /etc/nginx/sites-available/wordpressnginx.conf
 
 
 
