@@ -58,13 +58,11 @@ systemctl restart php7.1-fpm
 
 systemctl restart nginx 
 
-
-################################################################
-
+echo " ################################################################ "
 
 echo  "Installation Completed Successfully . Please point" $name "to server Public IP address in your Domain DNS"
 
-################################################################
+echo " ################################################################ "
 
 echo "You will see database details are listed above. Use them to complete the installation by visiting -> http://"$name  
 
