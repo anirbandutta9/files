@@ -234,7 +234,7 @@ function printSuccessMessage()
     echo " >> Pass      : ${DB_PASS}"
     echo ""
     echo "################################################################"
-    _printPoweredBy
+
 
 }
 
