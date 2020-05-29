@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="db_driver_path">data/jdbc/postgresql-42.2.8.jar</entry>
+    <entry key="db_driver_path_is_relative">true</entry>
+    <entry key="db_driverclass">org.postgresql.Driver</entry>
+    <entry key="db_password">rapidminer</entry>
+    <entry key="db_port">5432</entry>
+    <entry key="db_schema">rapidminer_server</entry>
+    <entry key="db_system">PostgreSQL</entry>
+    <entry key="db_url">localhost</entry>
+    <entry key="db_user">rapidminer</entry>
+    <entry key="eula_accepted">true</entry>
+    <entry key="home_directory">/root/rapidminer-server/rapidminer-server-home</entry>
+    <entry key="installation_directory">/root/rapidminer-server/rapidminer-server-9.6.0</entry>
+    <entry key="java_home">/usr/lib/jvm/java-8-openjdk-amd64</entry>
+    <entry key="java_use_system_java_home_or_path">true</entry>
+    <entry key="job_agent_bundled">true</entry>
+    <entry key="job_container_count">1</entry>
+    <entry key="job_container_max_memory">2048</entry>
+    <entry key="license_key">H4sIAAAAAAAAAH2RW3OiQBCF/0qKV0NELqJWpWqNeEO8S7ys+wBDB0eYgcyMGkzlv+9IspuHrdp54/Spr89p3pUUI6Ac3OV0orSU972Ssyw6ITGM9kprr7AgxxHBFJjKgZ2B7ZX7v55nYBxnlEvnz71iP+iVvfLre9yNsJDjkkMzqqKMEGAIB+kXBBBEQBFIh6FJ5SvLCAqp0FOaSo2LgAknEDdTzbI1y27q2u3JGbzlmAW3HX8MdU03bNNo3t430Oe33C1ZjgYEyjyRkMlTzH/EJMDpg4xWZoLb1/8MsloOTGC4lX7/+JASkhcQLMBU8M8l/wgXCMvryTRqigkW5YaaLFEy0yzGKEhVyUbAecb453yvlPyvEkOnVDW7CQECXbVCQ1NN3dDVQANDbYRNo/FihkjXrJIaUJqJ8jifOJ9icYeyExWtO1WilXuF45gG4sRA/vnRzo8rWyMcrq8kynrJpmjP7FHNW/fbcYKSJ7o7OCG/ZDjpQN0kM5OaceHmnfzYDLjBrnrVO09nKDYH69nKCQVsjZqdeE5qkp4/G9DpYPXqVup9gqd0y4fC6zfMzXg+jNuXaXZcdJb61UHdZNJNXPTmL7xdbVh4z2TC7VW1gUVeLKPONspJRPrh2a86h0M7tqYNZh2pe3ol58Ywf+mSHcz9Kmv3WW+5haSn8RxW/mKSeL3lJkVudTwQSRb2OqtVUa+H411g2uBalyssun2vZw78eiV+tTXwDuKQxGwz6uzs0H1y5n7jmj+N5+E44m26LQAHTqpfyeV46hRNa9Oveu04XxR0sV5trWLRBHrMJsb88VH5+A3OdfCUZAMAAA==</entry>
+    <entry key="mail_password"/>
+    <entry key="mail_port">25</entry>
+    <entry key="mail_properties"/>
+    <entry key="mail_sender"/>
+    <entry key="mail_url"/>
+    <entry key="mail_user"/>
+    <entry key="memory_max">2048</entry>
+    <entry key="mode">install</entry>
+    <entry key="queue_port">5672</entry>
+    <entry key="radoop_proxy_enable">false</entry>
+    <entry key="radoop_proxy_port">1081</entry>
+    <entry key="server_host">localhost</entry>
+    <entry key="server_host_bind_only">false</entry>
+    <entry key="server_port">8080</entry>
+    <entry key="server_register_as_service">false</entry>
+    <entry key="server_service_id">RMSSVC</entry>
+    <entry key="server_service_id_overwrite">null</entry>
+    <entry key="server_service_name">RapidMiner_Server</entry>
+</properties>
