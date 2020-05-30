@@ -4,11 +4,11 @@ banner rapidminer
 
 banner()
 {
-  echo "+------------------------------------------+"
+  echo "+---------------------------------------------------------------+"
   printf "| %-40s |\n" "`date`"
-  echo "|                                          |"
+  echo "|                                                               |"
   printf "|`tput bold` %-40s `tput sgr0`|\n" "$@"
-  echo "+------------------------------------------+"
+  echo "+---------------------------------------------------------------+"
 }
 
 banner "One Click RapidMiner Server Installation Started.
