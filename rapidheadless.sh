@@ -1,7 +1,18 @@
 #!/bin/bash
 
-echo "One Click RapidMiner Server Installation"
-echo "Please wait !!  This might take several minutes to complete !!"
+banner rapidminer 
+
+banner()
+{
+  echo "+------------------------------------------+"
+  printf "| %-40s |\n" "`date`"
+  echo "|                                          |"
+  printf "|`tput bold` %-40s `tput sgr0`|\n" "$@"
+  echo "+------------------------------------------+"
+}
+
+banner "One Click RapidMiner Server Installation Started.
+Please wait !!  This might take several minutes to complete !! "
 
 swapoff -a
 
@@ -34,7 +45,8 @@ CREATE USER rapidminer WITH ENCRYPTED PASSWORD 'rapidminer';
 GRANT ALL PRIVILEGES ON DATABASE rapidminer_server TO rapidminer;
 END_OF_SCRIPT
 
-exit
+
+
 
 cd rapidminer-server-installer-9.6.0/bin
 
