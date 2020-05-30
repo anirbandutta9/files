@@ -1,6 +1,7 @@
 #!/bin/bash
 
-echo "Please wait … This might take several minutes to complete …"
+echo "One Click RapidMiner Server Installation"
+echo "Please wait !!  This might take several minutes to complete !!"
 
 swapoff -a
 
@@ -25,6 +26,26 @@ unzip rapidminer-server-installer.zip
 cd rapidminer-server-installer-9.6.0/bin
 
 wget https://files.anirbandutta.in/rapidinstall.xml
+
+su postgres  << END_OF_SCRIPT
+psql << END_OF_SCRIPT
+CREATE DATABASE rapidminer_server;
+CREATE USER rapidminer WITH ENCRYPTED PASSWORD 'rapidminer';
+GRANT ALL PRIVILEGES ON DATABASE rapidminer_server TO rapidminer;
+END_OF_SCRIPT
+
+exit
+
+cd rapidminer-server-installer-9.6.0/bin
+
+bash rapidminer-server-installer rapidinstall.xml
+
+cd /root/rapidminer-server/rapidminer-server-9.6.0/bin
+
+./standalone.sh
+
+
+
 
 
 
