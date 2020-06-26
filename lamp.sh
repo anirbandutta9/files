@@ -41,6 +41,18 @@ INSTALL_MODSECURITY="False"
 # Set this to True if you need to secure your site using .htaccess rules
 SECURE_WEBSITE="False"
 
+banner()
+{
+  echo "+-----------------------------------------------------------------------+"
+  printf "| %-40s |\n" "`date`"
+  echo "|                                                               |"
+  printf "|`tput bold` %-40s `tput sgr0`|\n" "$@"
+  echo "+-----------------------------------------------------------------------+"
+}
+
+banner "Automatic LAMP Server Installation Started.
+Please wait !!  This might take several minutes to complete !! "
+
 
 #--------------------------------------------------
 # Update Server
