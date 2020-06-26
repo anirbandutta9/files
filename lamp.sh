@@ -45,7 +45,7 @@ banner()
 {
   echo "+-----------------------------------------------------------------------+"
   printf "| %-40s |\n" "`date`"
-  echo "|                                                               |"
+  echo "|                                                                       |"
   printf "|`tput bold` %-40s `tput sgr0`|\n" "$@"
   echo "+-----------------------------------------------------------------------+"
 }
@@ -53,7 +53,7 @@ banner()
 banner "Automatic LAMP Server Installation Started.
 Please wait !!  This might take several minutes to complete !! "
 
-
+sleep 10;
 #--------------------------------------------------
 # Update Server
 #--------------------------------------------------
